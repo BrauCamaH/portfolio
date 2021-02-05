@@ -20,25 +20,55 @@ const Navbar = () => {
   return (
     <nav
       css={css`
-        grid-area: navbar;
+        padding: 1rem;
         background: ${theme.colors.primary};
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        padding: 0.5rem 0;
       `}
     >
+      <Link to="/">
+        <img
+          css={css`
+            width: 60px;
+            height: 30px;
+          `}
+          src="/logo.png"
+          alt="logo"
+        />
+      </Link>
       <div
         css={css`
           margin: 0 1rem 0 0;
           padding: 0.25rem;
         `}
       >
-        <NavLink to="/about/" activeClassName="current-page">
-          about
+        <NavLink
+          css={css`
+            color: ${theme.background};
+          `}
+          to="/about/"
+          activeClassName="current-page"
+        >
+          About
         </NavLink>
-        <NavLink to="/contact/" activeClassName="current-page">
-          contact
+        <NavLink
+          css={css`
+            color: ${theme.background};
+          `}
+          to="/projects/"
+          activeClassName="current-page"
+        >
+          Projects
+        </NavLink>
+        <NavLink
+          css={css`
+            color: ${theme.background};
+          `}
+          to="/contact/"
+          activeClassName="current-page"
+        >
+          Contact
         </NavLink>
       </div>
     </nav>

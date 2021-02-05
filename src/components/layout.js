@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Global, css } from '@emotion/react';
 import { theme } from '../theme/theme';
 import Navbar from './navbar';
@@ -50,3 +51,7 @@ const Layout = ({ children }) => {
 };
 
 export default Layout;
+
+Layout.propTypes = {
+  children: PropTypes.element.isRequired,
+};
