@@ -1,0 +1,15 @@
+body {
+  --color-primary: #1d809f;
+  --color-secondary: #bce7fd;
+  --color-tertiary: #f7f052;
+  --color-success: #2dd36f;
+  --color-warning: #ffc409;
+  --color-danger: #ff0c3e;
+  --color-dark: #222428;
+  --color-light: #f4f5f8;
+  --color-medium: #92949c;
+  --link-color: #bce7fd;
+  --text-color: #011627;
+  --background-color: #ffffff;
+  --button-text-color: white;
+}
