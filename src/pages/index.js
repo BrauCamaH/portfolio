@@ -4,6 +4,7 @@ import { css } from '@emotion/react';
 import { theme } from '../theme/theme';
 
 import '../theme/variables.css';
+import Social from '../components/social';
 
 const Home = () => {
   return (
@@ -37,6 +38,7 @@ const Home = () => {
           </h2>
         </div>
       </div>
+      <Social />
     </Layout>
   );
 };
