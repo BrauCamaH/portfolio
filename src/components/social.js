@@ -22,7 +22,6 @@ const SocialItem = ({ color, svgIcon, text }) => {
             font-size: 1rem;
             outline: 0;
             border: 0;
-            border-radius: 0.25rem;
             box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
             cursor: pointer;
             :active {

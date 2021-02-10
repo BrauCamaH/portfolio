@@ -3,15 +3,16 @@ import Layout from '../components/layout';
 import { css } from '@emotion/react';
 import { theme } from '../theme/theme';
 
-import '../theme/variables.css';
 import Social from '../components/social';
+import Skills from '../components/skills';
+
+import '../theme/variables.css';
 
 const Home = () => {
   return (
     <Layout>
       <div
         css={css`
-          margin-left: 5em;
           padding: 0;
           display: flex;
           flex-direction: row;
@@ -39,6 +40,7 @@ const Home = () => {
         </div>
       </div>
       <Social />
+      <Skills />
     </Layout>
   );
 };

@@ -44,7 +44,13 @@ const Layout = ({ children }) => {
       />
       <div>
         <Navbar />
-        <main>{children}</main>
+        <main
+          css={css`
+            padding: 20px;
+          `}
+        >
+          {children}
+        </main>
       </div>
     </div>
   );
