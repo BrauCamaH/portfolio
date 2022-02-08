@@ -16,6 +16,9 @@ const StyledLink = styled(GatsbyLink)`
   &.current-page {
     border-bottom: 2px solid #222;
   }
+  &:last-of-type{
+    margin-right: 20px;
+  }
 `;
 
 const Link = React.forwardRef(function Link(props, ref) {
