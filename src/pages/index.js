@@ -1,10 +1,13 @@
 import * as React from "react";
 import Layout from "../components/layout";
+import Skills from "../components/skills";
+import Profile from "../components/profile";
 
 export default function App() {
   return (
     <Layout>
-      <h1>Hello, Its me Braulio Camarena</h1>
+      <Profile />
+      <Skills />
     </Layout>
   );
 }
