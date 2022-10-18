@@ -1,10 +1,5 @@
 import * as React from "react";
-import {
-  Card,
-  CardActions,
-  CardContent,
-  Typography,
- } from "@mui/material";
+import { Card, CardActions, CardContent, Typography } from "@mui/material";
 import { css } from "@emotion/react";
 export default function SkillCard({ name, description, image }) {
   return (
@@ -15,6 +10,7 @@ export default function SkillCard({ name, description, image }) {
         background-image: url(${image});
         background-repeat: no-repeat;
         margin: 5px;
+        background-size: cover;
       `}
     >
       <CardContent>

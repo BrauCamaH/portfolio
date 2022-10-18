@@ -15,7 +15,7 @@ const skills = [
   {
     name: "NodeJs",
     description:
-      "s a JavaScript runtime built on Chrome's V8 JavaScript engine.",
+      "JavaScript runtime built on Chrome's V8 JavaScript engine.",
     image: "node.svg",
   },
   {
