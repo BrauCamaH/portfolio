@@ -16,6 +16,7 @@ export default function SkillCard(name, description, image) {
         background-color: #fafafa;
         background-image: url(${"images/node.svg"});
         background-repeat: no-repeat;
+        margin: 5px;
       `}
     >
       <CardContent>

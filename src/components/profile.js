@@ -11,7 +11,7 @@ import {
 import { useMediaQuery } from "@mui/material";
 import { desktop } from "../shared/screen";
 
-export default function Profile() {
+export default function Profile(onlyImage) {
   const isDesktop = useMediaQuery(desktop);
 
   return (
@@ -32,7 +32,6 @@ export default function Profile() {
             margin: 2,
           }}
         />
-
         <Card variant="outlined">
           <CardContent>
             <h2>Hi, I’m Braulio Camarena</h2>

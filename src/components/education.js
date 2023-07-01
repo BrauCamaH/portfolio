@@ -40,6 +40,7 @@ export default function Education() {
               title={listItem.description}
             />
             <img
+              alt="tecmm"
               style={{ maxWidth: "100%" }}
               src={`/images/education/${listItem.image}`}
             />
