@@ -4,13 +4,14 @@ import { css } from "@emotion/react";
 import { useMediaQuery } from "@mui/material";
 import { desktop } from "../shared/screen";
 
-import { GitHub as Info } from "@mui/icons-material";
+import { GitHub as Info, Newspaper, Android } from "@mui/icons-material";
 
 const projects = [
   {
-    name: "Sufarmed",
-    description: "Online store for generic drugs",
-    link: "https://github.com/BrauCamaH/sufarmed",
+    name: "Cost Wallet",
+    description:
+      "Cost Wallet is a simple and easy-to-use app that helps you track and manage your expenses.",
+    link: "https://github.com/BrauCamaH/cost-wallet/",
   },
   {
     name: "Restasoft",
@@ -29,7 +30,8 @@ const projects = [
   },
   {
     name: "ARChair",
-    description: "AR App where you can visuaize a chair in any room",
+    description: "Demmo AR App usign Vuforia  where you can visualize a chair",
+    android: "",
   },
 ];
 export default function Projects() {
@@ -57,6 +59,7 @@ export default function Projects() {
             name={skill.name}
             description={skill.description}
             link={skill.link}
+            android={skill.android}
           />
         ))}
       </Box>
@@ -64,7 +67,7 @@ export default function Projects() {
   );
 }
 
-function ProjectCard({ name, description, link }) {
+function ProjectCard({ name, description, link, android }) {
   return (
     <Card
       sx={css`
@@ -83,6 +86,14 @@ function ProjectCard({ name, description, link }) {
             <Info />
           </IconButton>
         </a>
+      ) : null}
+      <IconButton variant="outlined">
+        <Newspaper />
+      </IconButton>
+      {android ? (
+        <IconButton variant="outlined">
+          <Android />
+        </IconButton>
       ) : null}
     </Card>
   );
